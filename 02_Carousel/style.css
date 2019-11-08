@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  /* background: rgb(171,255,218);
+  background: linear-gradient(90deg, rgba(171,255,218,1) 0%, rgba(160,112,245,1) 100%); */
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+header {
+  text-align: center;
+  margin: 5rem 0;
+}
+
+header span {
+  display: inline-block;
+  font-size: 4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid black;
+}
+
+.carousel-top {
+  display: flex;
+  justify-content: center;
+  /* position: relative; */
+}
+
+.carousel-top-main {
+  display: inline-block;
+  position: relative;
+}
+
+.btn-move {
+  width: 3rem;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  opacity: 0.6;
+}
+
+.btn-move-left {
+  position: absolute;
+  left: -10%;
+}
+
+.btn-move-right {
+  position: absolute;
+  right: -10%;
+}
+
+.btn-move-left:hover, 
+.btn-move-right:hover {
+  transform: scale(1.1);
+  transition: all 0.2s;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.carousel-bottom {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-circle {
+  width: 0.8rem;
+  height: auto;
+  margin: 0 0.2rem;
+  opacity: 0.5;
+}
+
+.btn-circle:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transform: scale(1.1);
+  transition: all 0.2s;
+}
+
+.btn-circle-toggle {
+  opacity: 1;
+  width: 0.8rem;
+  height: auto;
+  margin: 0 0.2rem;
+}

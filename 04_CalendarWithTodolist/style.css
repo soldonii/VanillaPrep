@@ -1,0 +1,436 @@
+@font-face{
+	font-family:"YouandiModernTR";
+	src:url('./assets/YouandiModernTR.eot');
+	src:url('./assets/YouandiModernTR.eot?#iefix') format('embedded-opentype'),
+			url('./assets/YouandiModernTR.woff') format('woff'),
+			url('./assets/YouandiModernTR.ttf') format('truetype'),
+			url('./assets/YouandiModernTR.svg#YouandiModernTR') format('svg');
+	src:local(※), url('./assets/YouandiModernTR.woff') format('woff');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'YouandiModernTR', 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+  font-size: 10px;
+  color: black;
+  display: flex;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.calendar {
+  /* background-color: beige;
+  border: 1px solid black; */
+  
+  width: 64vw;
+  height: 100vh;
+  padding: 3rem;
+}
+
+.calendar-top {
+  /* background-color: cadetblue;
+  border: 1px solid blue; */
+  display: flex;
+  justify-content: space-between;
+  height: 12rem;
+
+  position: relative;
+}
+
+.calendar-head {
+  /* background-color: yellowgreen;
+  border: 1px solid green; */
+  
+  width: 50%;
+}
+
+.calendar-head h1 {
+  font-size: 5.5rem;
+  margin-bottom: 1rem;
+}
+
+.calendar-head h3 {
+  font-size: 4rem;
+  color: rgb(147, 91, 184);
+}
+
+.calendar-btn {
+  /* background-color: slategrey;
+  border: 1px solid black; */
+
+  position: absolute;
+  right: 0;
+  bottom: 1.5rem;
+}
+
+.btn-arrow {
+  width: 2.5rem;
+  height: 2.5rem;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.btn-arrow:hover {
+  opacity: 1;
+  transition: all 0.8s;
+}
+
+.btn-left {
+  margin-right: 2rem;
+}
+
+.calendar-main {
+  /* background-color: coral;
+  border: 1px solid red; */
+
+  margin-top: 1.5rem;
+  height: 74%;
+  font-size: 3rem;
+}
+
+.calendar-main-table {
+  /* background-color: darkcyan; */
+  border: 3px solid black;
+  padding: 0.2rem;
+}
+
+table, td {
+  border: 0.1px solid black;
+  border-collapse: collapse;
+  font-size: 2rem;
+}
+
+thead {
+  border-bottom: 3px solid black;
+  background-color: rgb(226, 226, 226);
+}
+
+tbody {
+  cursor: pointer;
+}
+
+th {
+  /* background-color: #fff; */
+  width: 10.5rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  padding: 1rem 0 1rem 0;
+}
+
+td {
+  /* background-color: darkkhaki; */
+  padding: 1rem 0rem 3.5rem 1rem;
+  position: relative;
+}
+
+.selected {
+  background-color: rgb(174, 130, 202);
+  font-weight: bolder;
+}
+
+td > .works-todo {
+  background-color: red;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 4rem;
+}
+
+/* todo */
+.todo {
+  /* background-color: cornflowerblue;
+  border: 1px solid blue; */
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/background/autumn3.jpg);
+  background-size: 36vw 100vh, cover;
+
+  width: 36vw;
+  height: 100vh;
+  padding: 3rem;
+}
+
+.todo-today {
+  /* background-color: rgba(209, 209, 209, 0.514); */
+  /* border: 1px solid black; */
+  color: rgb(243, 243, 243);
+
+  font-size: 5.5rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+	background-color: transparent;
+	border-radius: 1rem;
+}
+
+.scrollbar::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}
+
+.scrollbar::-webkit-scrollbar {
+	width: 0.5rem;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  height: 1rem;
+  /* background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
+  background: rgb(131,58,180);
+  background: linear-gradient(180deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.scrollbar {
+  /* background-color: red; */
+  overflow: auto;
+  overflow-x: hidden;
+  height: 45.7rem;
+  width: 104%;
+  margin-bottom: 1rem;
+  z-index: 2;
+}
+
+.todo-container {
+  /* background-color: rgb(236, 160, 236);
+  border: 1px solid black; */
+  /* box-shadow: 0px 0px 5px 1px rgb(221, 221, 221); */
+  height: 45.7rem;
+  overflow: visible;
+  z-index: 2;
+}
+
+.todo-list {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0.5rem;
+  display: table;
+  position: relative;
+  margin-bottom: 1rem;
+  padding: 0.1rem 1rem;
+  width: 98%;
+}
+
+.todo-list > .todo-list-time {
+  /* background-color: darkgoldenrod;
+  border: 1px solid black; */
+  font-size: 2rem;
+  /* margin-right: 3rem; */
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.todo-list > .todo-list-work {
+  /* background-color: rgb(153, 111, 221);
+  border: 1px solid black; */
+  width: 27.5rem;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1.6rem;
+}
+
+.todo-list-icons {
+  /* background-color: rgb(123, 121, 240); */
+  height: 1.5rem;
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translate(0, -50%);
+}
+
+.todo-list-icons > img {
+  width: 1.5rem;
+  height: 1.5rem;
+  opacity: 0.5;
+}
+
+.todo-list-icons > img:hover {
+  width: 1.5rem;
+  height: 1.5rem;
+  opacity: 1;
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+
+.todo-clearAll {
+  height: 3.7rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-todo {
+  height: 100%;
+  width: 49%;
+  font-size: 3rem;
+  font-family: 'YouandiModernTR', 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+  background: rgb(93,44,8);
+  background: linear-gradient(270deg, rgba(93,44,8,1) 0%, rgba(145,129,56,1) 100%);
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0.5rem rgb(116, 116, 116);
+  color: white;
+  border: 0px solid transparent;
+}
+
+.btn-todo:hover {
+  background-color: rgba(233, 150, 122, 1);
+  opacity: 1;
+  border-radius: 1rem;
+  background: rgb(31,14,3);
+  background: linear-gradient(270deg, rgba(31,14,3,1) 0%, rgba(83,74,32,1) 100%);
+}
+
+.btn-todo:active {
+  background: rgb(31,14,3);
+  background: linear-gradient(270deg, rgba(31,14,3,1) 0%, rgba(83,74,32,1) 100%);
+  box-shadow: 0 0.3rem rgb(66, 66, 66);
+  transform: translateY(3px);
+}
+
+.btn-todo:focus {
+  outline: 0;
+}
+
+
+
+.add-container, .revise-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  /* border: 1px solid red; */
+  height: 35rem;
+  width: 39rem;
+  padding: 3rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 10px rgb(202, 202, 202);
+}
+
+.add-container, .add-container > *,
+.revise-container, .revise-container > * {
+  border-radius: 1rem;
+  color: rgb(243, 243, 243);
+}
+
+.add-container > h1,
+.revise-container > h1 {
+  /* background-color: white; */
+  /* border: 1px solid lightgreen; */
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.time-and-work {
+  /* background-color: lightseagreen; */
+  /* border: 1px solid tomato; */
+  margin: 3rem 0;
+  padding: 1rem;
+  height: 18rem;
+  font-size: 2.5rem;
+}
+
+.add-time {
+  /* background-color: bisque; */
+  /* border: 1px solid purple; */
+  margin-bottom: 2rem;
+}
+
+/* .add-work {
+  background-color: tomato;
+  border: 1px solid plum;
+} */
+
+.add-time > h3,
+.add-work > h3 {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.whenToDo {
+  border-radius: 0.5rem;
+  background-color: black;
+  /* border: 1px solid red; */
+  color: rgb(243, 243, 243);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.whatToDo {
+  width: 100%;
+  border-radius: 0.5rem;
+  background-color: black;
+  /* border: 1px solid red; */
+  color: rgb(243, 243, 243);
+  font-size: 2rem;
+}
+
+.whenToDo:focus,
+.whatToDo:focus {
+  outline: 0;
+}
+
+.add-button-container {
+  /* background-color: yellowgreen; */
+  text-align: right;
+}
+
+.add-btn,
+.cancel-btn {
+  width: 8rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+  font-size: 2rem;
+  font-family: 'YouandiModernTR', 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+  cursor: pointer;
+}
+
+.add-btn:hover,
+.cancel-btn:hover {
+  background-color: rgb(202, 202, 202);
+  /* border: 2px solid black; */
+}
+
+.add-btn:focus,
+.cancel-btn:focus {
+  outline: 0;
+}
+
+.modal {
+  /* display: none; */
+  opacity: 0;
+  position: fixed;
+  z-index: -1;
+  bottom: 9rem;
+  transition: all 0.5s ease-out;
+}
+
+.modalOn {
+  opacity: 1;
+  z-index: 1;
+  display: block;
+}
+
+
+.todo-counter {
+  z-index: -1;
+  opacity: 1;
+  position: fixed;
+  background-color: red;
+  color: rgb(174, 130, 202);
+  font-size: 2rem;
+}
+
+.check {
+  background-color: rgba(41, 41, 41, 0.5);
+  color: grey;
+}

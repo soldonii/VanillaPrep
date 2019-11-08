@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  color: black;
+  font-family: 'Apple SD Gothic Neo',arial,sans-serif;
+  font-size: 10px;
+}
+
+/* <--------- Navigation Bar ---------> */
+ul {
+  display: flex;
+  list-style: none;
+}
+
+.navigation ul {
+  justify-content: flex-end;
+  font-size: 1.3rem;
+}
+
+.navigation ul li {
+  margin: 2.2rem 0.9rem;
+}
+
+.navigation ul li:last-child {
+  margin : 1.5rem 2rem 2.2rem 1rem;
+}
+
+.nav-text a {
+  text-decoration: none;
+  color: rgba(0,0,0,0.87);
+}
+
+.nav-text a:hover {
+  text-decoration: underline;
+}
+
+.nav-img a img {
+  width: 1.6rem;
+}
+
+#menu {
+  opacity: 0.6;
+}
+
+#menu:hover {
+  opacity: 1;
+}
+
+#profile {
+  width: 3rem;
+}
+/* <--------- Navigation Bar ---------> */
+
+/* <--------- Main ---------> */
+.main {
+  padding: 12rem 0 0 0;
+}
+
+.logo {
+  margin-bottom: 2rem;
+}
+
+.logo img {
+  display: block;
+  width: 28rem;
+  margin: 0 auto;
+}
+
+.searchbar-container {
+  border: 0.1rem solid rgb(218, 218, 218);
+  border-radius: 100rem;
+  width: 47rem;
+  height: 5rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.searchbar-container input {
+  display: block;
+  margin: 0.2rem auto 0 auto;
+  height: 4.5rem;
+  width: 43rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: black;
+  border: 0px solid transparent;
+}
+
+.searchbar-container img {
+  width: 2.2rem;
+  position: absolute;
+  right: 2rem;
+  bottom: 1.2rem;
+}
+
+.searchbar-container #keyboard {
+  position: absolute;
+  right: 6rem;
+}
+
+.main-buttons {
+  margin-top: 3rem;
+}
+
+.buttons-container {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.buttons-container button {
+  display: inline-block;
+  margin: 0 auto;
+  width: fit-content;
+  height: 3.6rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.35rem;
+  letter-spacing: -0.03rem;
+  color: rgb(100, 100, 100);
+  border: 0.1rem solid rgb(247, 247, 247);
+  border-radius: 0.3rem;
+  background-color: rgb(247, 247, 247);
+}
+
+#btn-google {
+  margin-right: 1rem;
+}
+/* <--------- Main ---------> */
+
+/* <--------- Footer ---------> */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  color: rgb(100, 100, 100);
+}
+
+.footer-top {
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+  border-top: 1px solid rgb(218, 218, 218);
+  background-color: rgb(235, 235, 235);
+}
+
+.footer-bottom {
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgb(218, 218, 218);
+  background-color: rgb(235, 235, 235);
+  padding: 1.1rem 3rem;
+}
+
+.bottom-left li a,
+.bottom-right li a {
+  text-decoration: none;
+  color: rgb(100, 100, 100);
+}
+
+.bottom-left li,
+.bottom-right li {
+  margin-right: 3rem;
+}
+
+.bottom-left > li:last-child
+.bottom-right > li:last-child {
+  margin-right: 0;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Whack A Mole!</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="header">Whack A Mole
+    <span><img src="./assets/8bit-mole.png" alt="mole"></span>
+  </header>
+
+  <section class="inplay">
+    <div class="section-game">
+      <div class="mole-group">
+        <img src="./assets/hole.jpg" alt="mole" id="mole0">
+        <img src="./assets/hole.jpg" alt="mole" id="mole1">
+        <img src="./assets/hole.jpg" alt="mole" id="mole2">
+        <img src="./assets/hole.jpg" alt="mole" id="mole3">
+        <img src="./assets/hole.jpg" alt="mole" id="mole4">
+        <img src="./assets/hole.jpg" alt="mole" id="mole5">
+        <img src="./assets/hole.jpg" alt="mole" id="mole6">
+        <img src="./assets/hole.jpg" alt="mole" id="mole7">
+        <img src="./assets/hole.jpg" alt="mole" id="mole8">
+      </div>
+    </div>
+
+    <div class="section-player">
+      <h1>PLAYER1</h1>
+
+      <p id="timer-text">
+        <img src="./assets/8bit-timer.png" alt="timer-icon" id="timer-icon">
+        TIMER : <span id="timer">0</span> s
+      </p>
+
+      <p id="score-text">
+        <img src="./assets/8bit-score.png" alt="score-icon" id="score-icon">
+        SCORE : <span>0</span>
+      </p>
+
+      <div class="whack-container">
+        <p id="whacked-text">
+            <img src="./assets/8bit-whacked.svg" alt="whacked-icon" class="whacked-icon">
+              CAPTURED
+            <img src="./assets/8bit-whacked.svg" alt="whacked-icon" class="whacked-icon">
+        </p>
+
+        <div class="captured">
+          <img src="./assets/8bit-mole.png" alt="whacked moles" class="mole-inactive">
+          <img src="./assets/8bit-mole.png" alt="whacked moles" class="mole-inactive">
+          <img src="./assets/8bit-mole.png" alt="whacked moles" class="mole-inactive">
+          <img src="./assets/8bit-mole.png" alt="whacked moles" class="mole-inactive">
+          <img src="./assets/8bit-mole.png" alt="whacked moles" class="mole-inactive">
+          <img src="./assets/8bit-mole.png" alt="whacked moles" class="mole-inactive">
+          <img src="./assets/8bit-mole.png" alt="whacked moles" class="mole-inactive">
+          <img src="./assets/8bit-mole.png" alt="whacked moles" class="mole-inactive">
+          <img src="./assets/8bit-mole.png" alt="whacked moles" class="mole-inactive">
+          <img src="./assets/8bit-mole.png" alt="whacked moles" class="mole-inactive">
+        </div>
+      </div>
+      
+      <a href="#" class="btn-start">READY</a>
+    </div>
+  </section>
+
+  <div class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+          <p>You <span id="verdict"></span>!</p>
+          <br>
+        </div>
+        <div class="modal-body">
+          <p>Remaining Time is... <span id="remainingTime"></span>sec.</p> 
+          <p>Your Score is... <span id="finalScore"></span>.</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn-restart">RESTART</a>
+        </div>
+      </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

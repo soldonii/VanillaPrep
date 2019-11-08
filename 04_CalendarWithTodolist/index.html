@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="./style.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
+
+  <title>Calendar</title>
+</head>
+<body>
+  <section class="calendar noselect">
+    <div class="calendar-top">
+      <div class="calendar-head">
+        <h1 class="year"></h1>
+        <h3 class="month"></h3>
+      </div>
+      <div class="calendar-btn">
+        <img src="./assets/toLeft.png" alt="button left" class="btn-arrow btn-left">
+        <img src="./assets/toRight.png" alt="button right" class="btn-arrow btn-right">
+      </div>
+    </div>
+
+    <div class="calendar-main">
+      <table class="calendar-main-table">
+        <thead>
+          <tr>
+            <th>sun</th>
+            <th>mon</th>
+            <th>tue</th>
+            <th>wed</th>
+            <th>thu</th>
+            <th>fri</th>
+            <th>sat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="calendar-row" id="calendar-row-1">
+            <!-- <td><div class="todo-counter"><p>works</p></div></td>
+            <td><div class="todo-counter"><p>works</p></div></td>
+            <td><div class="todo-counter"><p>works</p></div></td>
+            <td><div class="todo-counter"><p>works</p></div></td>
+            <td><div class="todo-counter"><p>works</p></div></td>
+            <td><div class="todo-counter"><p>works</p></div></td>
+            <td><div class="todo-counter"><p>works</p></div></td> -->
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <!-- <td>1 <p class="works-todo">3 works</p> </td> -->
+          </tr>
+          <tr class="calendar-row" id="calendar-row-2">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="calendar-row" id="calendar-row-3">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="calendar-row" id="calendar-row-4">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="calendar-row" id="calendar-row-5">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="calendar-row" id="calendar-row-6">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="todo noselect">
+    <div class="todo-today">abc</div>
+
+    <div class="scrollbar">
+      <div class="todo-container">
+        <!-- <div class="todo-list">
+          <span class="todo-list-time">time</span>  
+          <span class="todo-list-work">what to dowhat to dowhat to dowhat to dowhat to dowhat to dowhat to do</span>
+          <div class="todo-list-icons">
+            <img src="./assets/edit.png" alt="edits">
+            <img src="./assets/delete.png" alt="delete">
+          </div>
+        </div> -->
+
+        
+         <!-- <div class="todo-list">
+          <span class="todo-list-time">09:00</span>
+          <span class="todo-list-work">brush your teeth</span>
+          <div class="todo-list-icons">
+            <img src="./assets/edit.png" alt="edits">
+            <img src="./assets/delete.png" alt="delete">
+          </div>
+        </div>
+        <div class="todo-list">
+          <span class="todo-list-time">09:00</span>
+          <span class="todo-list-work">brush your teeth</span>
+          <div class="todo-list-icons">
+            <img src="./assets/edit.png" alt="edits">
+            <img src="./assets/delete.png" alt="delete">
+          </div>
+        </div> -->
+        <!-- <div class="todo-list">
+          <span class="todo-list-time">09:00</span>
+          <span class="todo-list-work">brush your teeth</span>
+          <div class="todo-list-icons">
+            <img src="./assets/edit.png" alt="edits">
+            <img src="./assets/delete.png" alt="delete">
+          </div>
+        </div>
+        <div class="todo-list">
+          <span class="todo-list-time">09:00</span>
+          <span class="todo-list-work">brush your teeth</span>
+          <div class="todo-list-icons">
+            <img src="./assets/edit.png" alt="edits">
+            <img src="./assets/delete.png" alt="delete">
+          </div>
+        </div>
+        <div class="todo-list">
+          <span class="todo-list-time">09:00</span>
+          <span class="todo-list-work">brush your teeth</span>
+          <div class="todo-list-icons">
+            <img src="./assets/edit.png" alt="edits">
+            <img src="./assets/delete.png" alt="delete">
+          </div>
+        </div>
+        <div class="todo-list">
+          <span class="todo-list-time">09:00</span>
+          <span class="todo-list-work">brush your teeth</span>
+          <div class="todo-list-icons">
+            <img src="./assets/edit.png" alt="edits">
+            <img src="./assets/delete.png" alt="delete">
+          </div>
+        </div>
+        <div class="todo-list">
+          <span class="todo-list-time">09:00</span>
+          <span class="todo-list-work">brush your teeth</span>
+          <div class="todo-list-icons">
+            <img src="./assets/edit.png" alt="edits">
+            <img src="./assets/delete.png" alt="delete">
+          </div>
+        </div>
+        <div class="todo-list">
+          <span class="todo-list-time">09:00</span>
+          <span class="todo-list-work">brush your teeth</span>
+          <div class="todo-list-icons">
+            <img src="./assets/edit.png" alt="edits">
+            <img src="./assets/delete.png" alt="delete">
+          </div>
+        </div>
+        <div class="todo-list">
+          <span class="todo-list-time">09:00</span>
+          <span class="todo-list-work">brush your teeth</span>
+          <div class="todo-list-icons">
+            <img src="./assets/edit.png" alt="edits">
+            <img src="./assets/delete.png" alt="delete">
+          </div>
+        </div>
+        <div class="todo-list">
+          <span class="todo-list-time">09:00</span>
+          <span class="todo-list-work">brush your teeth</span>
+          <div class="todo-list-icons">
+            <img src="./assets/edit.png" alt="edits">
+            <img src="./assets/delete.png" alt="delete">
+          </div>
+        </div>
+        <div class="todo-list">
+          <span class="todo-list-time">09:00</span>
+          <span class="todo-list-work">brush your teeth</span>
+          <div class="todo-list-icons">
+            <img src="./assets/edit.png" alt="edits">
+            <img src="./assets/delete.png" alt="delete">
+          </div>
+        </div>
+        <div class="todo-list">
+          <span class="todo-list-time">09:00</span>
+          <span class="todo-list-work">brush your teeth</span>
+          <div class="todo-list-icons">
+            <img src="./assets/edit.png" alt="edits">
+            <img src="./assets/delete.png" alt="delete">
+          </div>
+        </div> -->
+        <!-- for test -->
+
+      </div>
+
+      <form class="add-container modal" method="GET">
+        <h1 class="modal-date"></h1>
+        <div class="time-and-work">
+          <div class="add-time">
+            <h3>time</h3>
+            <input type="time" class="whenToDo" name="time">
+          </div>
+          <div class="add-work">
+            <h3>work</h3>
+            <input type="text" autocomplete="off" class="whatToDo" name="work">
+          </div>
+        </div>
+        <div class="add-button-container">
+          <input type="submit" class="add-btn" value="add">
+          <!-- <button class="add-btn">add</button> -->
+          <button class="cancel-btn">cancel</button>
+        </div>
+      </form>
+
+      <form class="revise-container modal" method="GET">
+        <h1 class="modal-date"></h1>
+        <div class="time-and-work">
+          <div class="add-time">
+            <h3>time</h3>
+            <input type="time" class="whenToDo" name="time">
+          </div>
+          <div class="add-work">
+            <h3>work</h3>
+            <input type="text" autocomplete="off" class="whatToDo" name="work">
+          </div>
+        </div>
+        <div class="add-button-container">
+          <input type="submit" class="add-btn" value="add">
+          <!-- <button class="add-btn">add</button> -->
+          <button class="cancel-btn">cancel</button>
+        </div>
+      </form>
+
+    </div>
+
+    <div class="todo-clearAll">
+      <button class="btn-todo btn-add">Add</button>
+      <button class="btn-todo btn-clearAll">Clear All</button>
+    </div>
+
+  </section>
+  
+  <script src="./script.js"></script>
+  <!-- <script src="jquery-3.4.1.min.js"></script> -->
+</body>
+</html>
