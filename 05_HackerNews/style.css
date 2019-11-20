@@ -1,0 +1,161 @@
+/* main.html */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 10px;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited, a:active {
+  color: black;
+}
+
+.main {
+  /* background-color: palegreen; */
+  width: 85%;
+  margin: 1rem 0.5rem;
+  background-color: #f6f6ef;
+}
+
+.main-top {
+  background-color: #ff6600;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.top-logo-img {
+  border: 1px solid white;
+}
+
+.top-logo > a {
+  display: flex;
+  align-items: center;
+  margin: 0.2rem;
+}
+
+.top-title {
+  font-size: 1.4rem;
+  margin: 0 0.5rem 0 0.3rem;
+  font-weight: bold;
+}
+
+.top-menu {
+  font-size: 1.3rem;
+  margin: 0 0.5rem;
+}
+
+.top-right {
+  position: absolute;
+  right: 1rem;
+  font-size: 1.3rem;
+}
+
+/* MAIN-ARTICLE-SECTION */
+
+.main-mid {
+  padding: 1rem 1rem;
+}
+
+.main-mid a:hover {
+  text-decoration: underline;
+}
+
+.article-top {
+  /* background-color: lightskyblue; */
+  margin-bottom: 0.1rem;
+}
+
+.rank {
+  font-size: 1.3rem;
+  color: #828282;
+}
+
+.arrow img {
+  width: 0.8rem;
+}
+
+.article-title {
+  font-size: 1.3rem;
+}
+
+.article-title a:hover {
+  text-decoration: none;
+}
+
+.a:link, .a:hover, .title:link, .title:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.a:active, .a:visited, .title:active, .title:visited {
+  color: #828282;
+}
+
+.article-url, .article-url > a {
+  color: #828282;
+}
+
+.article-bottom {
+  margin-bottom: 0.6rem;
+}
+
+.article-info:first-child {
+  padding-left: 3rem;
+}
+
+.article-bottom, .article-bottom span a {
+  color: #828282;
+}
+
+.main-bottom {
+  /* background-color: lightsteelblue; */
+  padding: 0 3rem;
+}
+
+.main-bottom p {
+  font-size: 1.3rem;
+  color: #828282;
+  margin-bottom: 1rem;
+}
+
+hr {
+  border: 1px solid  #ff6600;
+  margin-bottom: 1rem;
+}
+
+.bottom-menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.search, .search input {
+  font-size: 1.3rem;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.search input {
+  margin-left: 0.5em;
+}
