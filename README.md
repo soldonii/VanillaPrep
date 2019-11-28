@@ -45,7 +45,7 @@
 
 2) Hacker News API를 통해 서버에 자료를 비동기로 요청한 후 수신한 후, 수신받은 데이터 순서와 동일하게 DOM에 표현하는 것이 메인입니다.
 
-![HackerNews](./05_HackerNews/HackerNews.png)
+![HackerNews](./05_HackerNews/hackernews.png)
 
 
 
