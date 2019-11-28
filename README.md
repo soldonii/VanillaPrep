@@ -46,3 +46,14 @@
 2) Hacker News API를 통해 서버에 자료를 비동기로 요청한 후 수신한 후, 수신받은 데이터 순서와 동일하게 DOM에 표현하는 것이 메인입니다.
 
 ![HackerNews](./05_HackerNews/HackerNews.png)
+
+
+
+# Vanilla 06_Mine Sweeper
+
+[바닐라코딩 추가 과제] Admission Test 통과 이후 주어진 추가 과제입니다. 지뢰찾기 게임을 만드는 과제입니다.
+
+*기본 layout 및 디자인은 https://yk-game-minesweeper.firebaseapp.com/game을 참고했습니다.
+
+![minesweeper](./06_MineSweeper/minesweeper.gif)
+

@@ -1,0 +1,234 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Tomorrow', sans-serif;
+  font-size: 10px;
+  color: darkblue;
+  background: rgb(2,0,36);
+  background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,179,255,1) 100%);
+}
+
+.top {
+  /* background-color: teal; */
+  height: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.topBtn {
+  background-color: rgb(89, 205, 255);
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  border: 3px solid darkblue;
+  border-top-width: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  box-shadow: 0 0.3rem 4rem white;
+}
+
+.topBtn:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  transition-duration: 300ms;
+  
+}
+
+.topBtn > img {
+  width: 3rem;
+  margin-right: 1rem;
+}
+
+.right {
+  /* background-color: bisque; */
+  padding: 3rem 0;
+  width: 15%;
+  position: absolute;
+  right: 0;
+}
+
+.rightBtn {
+  background-color: azure;
+  border: 3px solid rgba(9,9,121,1);
+  border-right-width: 0;
+  padding: 2rem 2rem;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  box-shadow: -2px 2px 1rem white;
+}
+
+.rightBtn > img {
+  height: 6rem;
+  margin-right: 1rem;
+}
+
+.rightBtnText {
+  /* background-color: white; */
+  width: 10rem;
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+#timerText {
+  color: rgb(226, 0, 0);
+}
+
+.left {
+  /* background-color: teal; */
+  padding: 14rem 0 10rem 0;
+  width: 15%;
+  position: absolute;
+  left: 2rem;
+}
+
+.difficulty {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.difficulty:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: all 300ms ease;
+  color: darkblue;
+  text-shadow: 0 0 1rem white;
+  font-weight: 800;
+}
+
+.difficultyActive {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  transform: scale(1.2);
+  color: darkblue;
+  text-shadow: 0 0 1rem white;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.difficulty > img {
+  height: 5rem;
+  margin-right: 1rem;
+}
+
+.leftBtnText {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.msContainer {
+  /* background-color: rgba(255, 255, 255, 0.363); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 85vh;
+}
+
+.grid {
+  display: grid;
+}
+
+.easy {
+  /* background-color: darksalmon; */
+  font-size: 2rem;
+  display: grid;
+  gap: 1px 1px;
+  place-items: center center;
+
+  grid-template-columns: repeat(10, [col] 3.5rem);
+  grid-template-rows: 3.5rem;
+}
+
+.medium {
+  /* background-color: darksalmon; */
+  font-size: 1.7rem;
+  display: grid;
+  gap: 1px 1px;
+  place-items: center center;
+  grid-template-columns: repeat(15, [col] 3rem);
+  grid-template-rows: 3rem;
+}
+
+.hard {
+  /* background-color: darksalmon; */
+  font-size: 1.5rem;
+  display: grid;
+  gap: 1px 1px;
+  place-items: center center;
+  grid-template-columns: repeat(20, [col] 2.5rem);
+  grid-template-rows: 2.5rem;
+}
+
+.square {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.squareBomb {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: transparent;
+}
+
+.squareCover {
+  background-color: rgb(196, 196, 196);
+  height: 100%;
+  width: 100%;
+  border: 4px solid;
+  border-color: azure rgb(56, 56, 56) rgb(56, 56, 56) azure;
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: transparent;
+  /* color: black; */
+  font-size: 1rem;
+}
+
+.squareCover:hover {
+  background-color: rgb(196, 196, 196);
+  height: 100%;
+  width: 100%;
+  border: 4px solid;
+  border-color: rgb(56, 56, 56) azure azure rgb(56, 56, 56);
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.dsaf {
+  color: teal
+}

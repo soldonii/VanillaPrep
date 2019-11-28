@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en"  oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://fonts.googleapis.com/css?family=Tomorrow:500,700,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" type="image/png" sizes="180x180" href="./assets/favicon.png">
+  <link rel="icon" type="image/png" sizes="180x180" href="./assets/favicon.png">
+
+  <title>Mine Sweeper by soldonii</title>
+</head>
+<body>
+  <section class="container" >
+    <div class="top">
+      <div class="topBtn">
+        <img src="./assets/newgame.png" alt="newGame" id="newGame">
+        <span class="topBtnText">NEW GAME</span>
+      </div>
+      <!-- <div class="topBtn">
+        <img src="./assets/credits.png" alt="credits" id="credits">
+        <span class="topBtnText">CREDITS</span>
+      </div> -->
+    </div>
+
+    <div class="right">
+      <div class="rightBtn">
+        <img src="./assets/bomb.png" alt="bomb" id="bomb">
+        <span class="rightBtnText" id="bombText">15</span>
+      </div>
+      <div class="rightBtn">
+        <img src="./assets/flags.png" alt="flag" id="flag">
+        <span class="rightBtnText" id="flagText">15</span>
+      </div>
+      <div class="rightBtn">
+        <img src="./assets/timer.png" alt="timer" id="timer">
+        <span class="rightBtnText" id="timerText">0</span>
+      </div>
+    </div>
+
+    <div class="left">
+      <div class="difficulty">
+        <img src="./assets/easy.png" alt="easy" id="easy">
+        <span class="leftBtnText">EASY</span>
+      </div>
+      <div class="difficulty">
+        <img src="./assets/medium.png" alt="medium" id="medium">
+        <span class="leftBtnText">MEDIUM</span>
+      </div>
+      <div class="difficulty">
+        <img src="./assets/hard.png" alt="hard" id="hard">
+        <span class="leftBtnText">HARD</span>
+      </div>
+    </div>
+
+    <section class="msContainer">
+      <div class="grid"></div>
+    </section>
+  </section>
+  
+  <script src="./script.js"></script>
+</body>
+</html>
